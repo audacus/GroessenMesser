@@ -41,7 +41,7 @@
 
     </RadioGroup>
 
-   ch.fenceposts.appquest.groessenmesser.view.CanvasGreenLineViewew
+   <ch.fenceposts.appquest.groessenmesser.view.CanvasGreenLineView
         android:id="@+id/viewCustomView"
         android:layout_width="333dp"
         android:layout_height="250dp"

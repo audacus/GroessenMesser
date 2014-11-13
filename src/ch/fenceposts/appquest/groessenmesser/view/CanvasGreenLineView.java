@@ -10,7 +10,7 @@ import android.view.View;
 //View zum zeichnen der grünen Linie für über dem CameraPreview (SurfaceView)
 public class CanvasGreenLineView extends View {
 	public CanvasGreenLineView(Context context, AttributeSet attrs) {
-		super(context, attrs);		
+		super(context, attrs);
 	}
 	
 	@Override
