@@ -17,62 +17,125 @@
         android:layout_centerHorizontal="true"
         android:contentDescription="@string/groessenmesser_png_content_description"
         android:src="@drawable/groessenmesser" />
-    
-    <TextView 
-        android:id="@+id/textViewSymbolAlpha" 
-        android:layout_width="wrap_content" 
-        android:layout_height="wrap_content" 
-        android:layout_alignBaseline="@+id/textViewCalculateValueAlpha" 
-        android:layout_alignBottom="@+id/textViewCalculateValueAlpha" 
-        android:layout_alignLeft="@+id/test_image" 
-        android:text="@string/symbol_alpha" 
+
+    <TextView
+        android:id="@+id/textViewSymbolAlpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewCalculateValueAlpha"
+        android:layout_alignBottom="@+id/textViewCalculateValueAlpha"
+        android:layout_alignLeft="@+id/test_image"
+        android:text="@string/symbol_alpha"
         android:textSize="@dimen/activity_measures_size" />
 
-    <TextView 
-        android:id="@+id/textViewSymbolBeta" 
-        android:layout_width="wrap_content" 
+    <TextView
+        android:id="@+id/textViewSymbolBeta"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textViewCalculate" 
-        android:layout_centerHorizontal="true" 
-        android:text="@string/symbol_beta" 
+        android:layout_above="@+id/textViewCalculate"
+        android:layout_centerHorizontal="true"
+        android:text="@string/symbol_beta"
         android:textSize="@dimen/activity_measures_size" />
-    
-    <TextView 
-        android:id="@+id/textViewCalculateValueAlpha" 
-        android:layout_width="wrap_content" 
-        android:layout_height="wrap_content" 
-        android:layout_below="@+id/test_image" 
-        android:layout_marginLeft="10dp" 
-        android:layout_toRightOf="@+id/textViewSymbolAlpha" 
-        android:text="@string/no_value" 
+
+    <TextView
+        android:id="@+id/textViewCalculateValueAlpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/test_image"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/textViewSymbolAlpha"
+        android:text="@string/no_value"
         android:textSize="@dimen/activity_measures_size" />
-    
-    <TextView 
-        android:id="@+id/textViewCalculateValueBeta" 
-        android:layout_width="wrap_content" 
-        android:layout_height="wrap_content" 
-        android:layout_below="@+id/test_image" 
-        android:layout_marginLeft="10dp" 
-        android:layout_toRightOf="@+id/textViewSymbolBeta" 
-        android:text="@string/no_value" 
+
+    <TextView
+        android:id="@+id/textViewCalculateValueBeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/test_image"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/textViewSymbolBeta"
+        android:text="@string/no_value"
         android:textSize="@dimen/activity_measures_size" />
-    
-    <TextView 
-        android:id="@+id/textViewCalculate" 
-        android:layout_width="wrap_content" 
-        android:layout_height="wrap_content" 
-        android:layout_alignLeft="@+id/radioButtonGroupCalculate" 
-        android:layout_below="@+id/textViewSymbolAlpha" 
-        android:layout_marginTop="12dp" 
-        android:text="@string/calculate_etc" 
+
+    <TextView
+        android:id="@+id/textViewResultValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewCalculatedValue"
+        android:layout_alignBottom="@+id/textViewCalculatedValue"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/textViewCalculatedValue"
+        android:text="@string/no_value"
         android:textSize="@dimen/activity_measures_size" />
-    
+
+    <TextView
+        android:id="@+id/textViewResultValueEntity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewResultValue"
+        android:layout_alignBottom="@+id/textViewResultValue"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/textViewResultValue"
+        android:text="@string/entity_symbol_metre"
+        android:textSize="@dimen/activity_measures_size" />
+
+    <TextView
+        android:id="@+id/textViewGivenValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewCalculate"
+        android:layout_below="@+id/radioButtonGroupCalculate"
+        android:layout_marginTop="14dp"
+        android:text="@string/distance"
+        android:textSize="@dimen/activity_measures_size" />
+
+    <EditText
+        android:id="@+id/editTextGivenValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewGivenValueEntitiy"
+        android:layout_toLeftOf="@+id/textViewGivenValueEntitiy"
+        android:layout_toRightOf="@+id/textViewCalculate"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textViewCalculatedValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewGivenValue"
+        android:layout_below="@+id/textViewGivenValue"
+        android:layout_marginTop="16dp"
+        android:text="@string/height"
+        android:textSize="@dimen/activity_measures_size" />
+
+    <TextView
+        android:id="@+id/textViewGivenValueEntitiy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewCalculatedValue"
+        android:layout_alignRight="@+id/radioButtonGroupCalculate"
+        android:text="@string/entity_symbol_metre"
+        android:textSize="@dimen/activity_measures_size" />
+
+    <TextView
+        android:id="@+id/textViewCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewSymbolAlpha"
+        android:layout_below="@+id/textViewSymbolAlpha"
+        android:layout_marginTop="21dp"
+        android:text="@string/calculate"
+        android:textSize="@dimen/activity_measures_size" />
+
     <RadioGroup
         android:id="@+id/radioButtonGroupCalculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textViewSymbolAlpha"
-        android:layout_below="@+id/textViewCalculate"
+        android:layout_alignBottom="@+id/textViewCalculate"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/textViewCalculate"
         android:orientation="horizontal" >
 
         <RadioButton
@@ -89,85 +152,6 @@
             android:layout_height="wrap_content"
             android:text="@string/distance"
             android:textSize="@dimen/activity_measures_size" />
-
     </RadioGroup>
-
-    <TextView
-        android:id="@+id/textViewGivenValue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/radioButtonGroupCalculate"
-        android:layout_below="@+id/radioButtonGroupCalculate"
-        android:text="@string/distance"
-        android:textSize="@dimen/activity_measures_size" />
-
-    <EditText 
-        android:id="@+id/editTextGivenValue" 
-        android:layout_width="wrap_content" 
-        android:layout_height="wrap_content" 
-        android:layout_below="@+id/radioButtonGroupCalculate" 
-        android:layout_marginLeft="10dp" 
-        android:layout_marginRight="5dp" 
-        android:layout_toLeftOf="@+id/textViewGivenValueEntitiy" 
-        android:layout_toRightOf="@+id/textViewGivenValue" 
-        android:ems="10" 
-        android:inputType="numberDecimal">
-
-        <requestFocus />
-    </EditText>
-    
-    <TextView
-        android:id="@+id/textViewGivenValueEntitiy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textViewGivenValue"
-        android:layout_alignBottom="@+id/textViewGivenValue"
-        android:layout_alignRight="@+id/test_image"
-        android:text="@string/entity_symbol_metre"
-        android:textSize="@dimen/activity_measures_size" />
-
-    
-
-    <Button
-        android:id="@+id/buttonCalculateResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editTextGivenValue"
-        android:layout_below="@+id/editTextGivenValue"
-        android:layout_marginTop="20dp"
-        android:onClick="calculateResult"
-        android:text="@string/calculate" />
-
-    <TextView
-        android:id="@+id/textViewCalculatedValue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textViewGivenValue"
-        android:layout_below="@+id/buttonCalculateResult"
-        android:layout_marginTop="15dp"
-        android:text="@string/height"
-        android:textSize="@dimen/activity_measures_size" />
-
-    <TextView
-        android:id="@+id/textViewResultValue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textViewCalculatedValue"
-        android:layout_alignBottom="@+id/textViewCalculatedValue"
-        android:layout_marginLeft="10dp"
-        android:layout_toRightOf="@+id/textViewCalculatedValue"
-        android:text="@string/no_value"
-        android:textSize="@dimen/activity_measures_size" />
-        
-        <TextView 
-            android:id="@+id/textViewResultValueEntity" 
-            android:layout_width="wrap_content" 
-            android:layout_height="wrap_content" 
-            android:layout_alignBaseline="@+id/textViewResultValue" 
-            android:layout_alignBottom="@+id/textViewResultValue" 
-            android:layout_marginLeft="5dp" 
-            android:layout_toRightOf="@+id/textViewResultValue" 
-            android:text="@string/entity_symbol_metre" 
-            android:textSize="@dimen/activity_measures_size" />
 
 </RelativeLayout>
