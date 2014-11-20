@@ -2,8 +2,6 @@ package ch.fenceposts.appquest.groessenmesser;
 
 import java.io.IOException;
 
-import ch.fenceposts.appquest.groessenmesser.controller.ControllerSensor;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.hardware.Camera;
@@ -21,7 +19,9 @@ import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import ch.fenceposts.appquest.groessenmesser.controller.ControllerSensor;
 
+@SuppressWarnings("deprecation")
 public class MainActivity extends Activity implements SensorEventListener, SurfaceHolder.Callback, Camera.PictureCallback {
 
 	private static final String DEBUG_TAG = "mydebug";
